@@ -2,7 +2,6 @@
 
 import { Column, DataType, Model, Table } from "sequelize-typescript";
 
-
 @Table
 export class Livro extends Model<Livro> {
   @Column({
@@ -15,16 +14,10 @@ export class Livro extends Model<Livro> {
     allowNull: false,
   })
   nome: string;
+  
   @Column({
     type: DataType.DECIMAL(10,2),
     allowNull: false,
   })
   preco: number;
-
-  constructor(codigo, nome, preco) {
-    super();
-    this.codigo = codigo;
-    this.nome = nome;
-    this.preco = preco;
-  }
 }
