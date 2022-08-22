@@ -24,6 +24,14 @@
 
 ## Description
 
+Instalação 
+
+```bash
+$ npm i --save @nestjs/sequelize sequelize-typescript sequelize
+
+$ npm i --save @nestjs/sequelize
+```
+
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
 ## Installation
